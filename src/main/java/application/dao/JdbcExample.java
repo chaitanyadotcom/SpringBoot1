@@ -26,7 +26,7 @@ public class JdbcExample
 			
 		    System.out.println("2. Auto Commit off!!!" + conn);
 		    conn.setAutoCommit(false);
-		    System.out.println("4. Get a Column of the first Row - access column by Position:");
+		    System.out.println("4. Get a Column of the first Row - access column by Position on JdbcExample:");
 
 		    PreparedStatement pStmt = conn.prepareStatement("select * from employee e, account a where a.account_id = e.account_id and e.SSN=?");
 		    pStmt.setString(1, SSN);
